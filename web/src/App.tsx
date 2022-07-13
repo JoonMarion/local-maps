@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
     const theme = {
@@ -15,8 +16,8 @@ function App() {
         <ThemeProvider theme={theme}>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/">Render Home!</Route>
-                    <Route path="/new"></Route>
+                    <Route path="/" element={<Home />} />
+                    21,01
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>
